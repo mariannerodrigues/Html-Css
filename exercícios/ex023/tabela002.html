@@ -18,6 +18,12 @@
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(128, 128, 128, 0.404);
+        }
 
         td.num{
             text-align: right;
@@ -36,10 +42,13 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
         <thead>
             <tr>
-                <th>  Estado </th>
-                <th>População</th>
+                <th scope="col">  Estado </th>
+                <th scope="col" style="width: 50px;">População</th>
             
             </tr>
 
@@ -60,7 +69,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th> Total de Habitantes</th>
+                <th scope="row"> Total de Habitantes</th>
                 <td class="num"><strong>00000</strong></td>
             </tr>
 
